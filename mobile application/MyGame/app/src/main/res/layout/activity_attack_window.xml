@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AttackWindow">
+
+    <ImageView
+        android:id="@+id/store_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="140dp"
+        android:maxHeight="170dp"
+        android:minWidth="100dp"
+        android:minHeight="140dp"
+        android:src="@tools:sample/avatars"
+        app:layout_constraintBottom_toTopOf="@+id/enemy_image"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.225" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="60dp"
+        android:padding="25dp"
+        android:text="100HP"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/enemy_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintStart_toEndOf="@+id/store_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/enemy_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="248dp"
+        android:layout_marginEnd="128dp"
+        android:maxWidth="140dp"
+        android:maxHeight="170dp"
+        android:minWidth="100dp"
+        android:minHeight="140dp"
+        android:src="@drawable/enemy_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/enemy_health_render"/>
+
+    <TextView
+        android:id="@+id/enemy_health_render"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:layout_marginTop="20dp"
+        android:text="6/15"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/result_step"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enemy_image" />
+
+    <TextView
+        android:id="@+id/result_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="25dp"
+        android:text="результат хода"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@id/selecter_action"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enemy_health_render" />
+
+    <LinearLayout
+        android:id="@+id/selecter_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result_step">
+
+        <Button
+            android:id="@+id/attack_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="атака"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/regen_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="отхилиться"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
