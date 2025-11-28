@@ -31,7 +31,7 @@
         android:layout_margin="50dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="60dp"
-        android:text="Денег"
+        android:text="@string/money_store"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.98"
@@ -79,25 +79,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="диалогвое окно" />
+            android:text="@string/dialog_window" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="диалогвое окно" />
+            android:text="@string/dialog_window" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="диалогвое окно" />
+            android:text="@string/dialog_window" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="диалогвое окно" />
+            android:text="@string/dialog_window" />
     </LinearLayout>
 
     <LinearLayout
@@ -116,20 +116,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="описание" />
+            android:text="@string/description" />
 
         <TextView
             android:layout_width="72dp"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="описание" />
+            android:text="@string/description" />
     </LinearLayout>
 
     <Button
         android:id="@+id/exit_store"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Exit"
+        android:text="@string/exit_btn"
         android:textStyle="bold"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"

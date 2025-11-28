@@ -2,4 +2,15 @@
     <string name="app_name">My Game</string>
     <string name="hint_name">Имя</string>
     <string name="start_lvl_player">1</string>
+    <string name="go_start_btn">start game</string>
+    <string name="exit_btn">exit</string>
+    <string name="points">points: </string>
+    <string name="player_health_points">100hp</string>
+    <string name="enemy_health_points">6/16</string>
+    <string name="result_step">result step:</string>
+    <string name="btn_attack">attack</string>
+    <string name="btn_regen">regen</string>
+    <string name="money_store">money:</string>
+    <string name="dialog_window">dialog example</string>
+    <string name="description">description</string>
 </resources>
